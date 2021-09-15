@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidebar > h2 {
+  color: #666;
+  padding: 0.2rem;
+}
+.siderbar-container {
+  position: fixed;
+  top: 0.5rem;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Varela", sans-serif;
+  background-color: #2d2c3c;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding: 0.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: #ddd;
+  /*font-family: 'Varela', sans-serif;*/
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 1.3rem; */
+}
+
+.chat {
+  background-color: #777782;
+  width: 70vw;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  height: auto;
+  margin: 1rem;
+}
+.chat-container {
+  padding: 0.5rem;
+  position: relative;
+}
+.name {
+  color: #ccc;
+}
+.chat-message {
+  color: #9494a4;
+}
+.time {
+  float: right;
+  color: #f0f0f5;
+}
+
+.send-container {
+  position: relative;
+  margin: auto;
+}
+.fa-chevron-circle-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  color: rgb(32, 32, 34);
+  cursor: pointer;
+}
+.text {
+  height: 3rem;
+  width: 70vw;
+  resize: none;
+  outline: none;
+  border: 1px solid lightblue;
+  border-radius: 5rem;
+  padding: 0.8rem;
+  overflow-y: hidden;
+  font-family: "Varela Round", sans-serif;
+}
+.bar.fa-bars {
+  display: none;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.overlay.show-overlay {
+  display: block;
+}
+.fa-times {
+  color: red;
+  right: 1.8rem;
+  top: 2rem;
+  position: absolute;
+  font-size: 2.1rem;
+  cursor: pointer;
+}
+.group-name {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .siderbar-container {
+    transform: translateX(-100%);
+    top: 0;
+    z-index: 99;
+    background-color: #061111;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .siderbar-container.show {
+    transform: translateX(0%);
+  }
+  .bar.fa-bars {
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    cursor: pointer;
+  }
+}

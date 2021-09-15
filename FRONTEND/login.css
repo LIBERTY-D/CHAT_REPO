@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #f3f3f5;
+}
+.form-container {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  border: 1px solid rgb(192, 188, 188);
+  width: 100%;
+  box-shadow: 0.3rem 0.1rem 2rem rgba(0, 0, 0, 0.5);
+}
+input {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-top: 0.8rem;
+}
+select {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+option {
+  color: #333;
+  background-color: white;
+}
+form {
+  margin: 0.3rem;
+}
+.form-button {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.login-button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 0.8rem;
+  background-color: rgb(32, 32, 36);
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5rem;
+  width: 70%;
+}
